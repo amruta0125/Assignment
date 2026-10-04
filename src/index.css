@@ -1,0 +1,164 @@
+@import "tailwindcss";
+
+
+.hero {
+  min-height: 100vh;
+  background-color:#1f211d;
+  color: #f5f1e8;
+
+}
+
+.hero h1 {
+  margin-top:100px;
+  color:white;
+  font-size: 5vw;
+  font-weight: 700;
+  letter-spacing: 0.35em;
+  text-align: center;
+  
+}
+
+.hero h1 span {
+  margin-left: 25px;
+}
+
+.cards-container {
+  margin-top:100px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  
+  width: 300px;
+  height:150px;
+  padding: 25px 15px;
+  text-align: center;
+
+  border: 1px solid #555750;
+  border-radius: 8px;
+  background-color: #252722;
+}
+
+.stat-box h2 {
+  color: #c8f35a;
+  font-size: 2rem;
+  margin-bottom: 8px;
+}
+
+.stat-box p {
+  color: #bdbdb7;
+  margin: 0;
+  font-size: 2rem;
+}
+
+
+.core-section {
+  position: relative;
+  height: 100vh;
+  min-height: 650px;
+  padding: 30px 20px;
+  background-color: #1f211d;
+  color: #f5f1e8;
+  overflow: hidden;
+}
+
+.core-heading {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+}
+
+.core-heading p {
+  color: #c8f35a;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.3em;
+  margin-bottom: 10px;
+}
+
+.core-heading h2 {
+  color: #f5f1e8;
+  font-size: clamp(1.4rem, 3vw, 2.5rem);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  margin: 0;
+}
+
+.skateboard-stage {
+  position: relative;
+  height: calc(100vh - 130px);
+  min-height: 500px;
+  width: 100%;
+}
+
+.skateboard {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+
+  width: min(40vw, 320px);
+  height: 40vh;
+  object-fit: contain;
+
+  will-change: transform;
+  pointer-events: none;
+  mix-blend-mode: lighten;
+}
+
+.benefits-container {
+  position: absolute;
+  
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: min(90%, 600px);
+  text-align: center;
+  z-index: 1;
+}
+
+.benefit {
+  margin-bottom: 35px;
+  opacity: 0;
+  transform: translateY(30px);
+}
+
+.benefit span {
+  color: #c8f35a;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+}
+
+.benefit h3 {
+  color: #f5f1e8;
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 800;
+  margin: 8px 0;
+}
+
+.benefit p {
+  color: #bdbdb7;
+  font-size: 1rem;
+  margin: 0 auto;
+  max-width: 450px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .core-heading h2 {
+    font-size: 1.3rem;
+  }
+
+  .skateboard {
+    width: 55vw;
+    height: 40vh;
+  }
+
+  .benefits-container {
+    width: 95%;
+  }
+}
