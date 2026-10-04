@@ -1,4 +1,4 @@
-# UPSHIFT - Scroll-Driven Hero Section
+Scroll-Driven Hero Section
 
 A scroll-driven hero section created as part of the frontend assignment.
 
@@ -6,6 +6,7 @@ A scroll-driven hero section created as part of the frontend assignment.
 
 - React
 - Vite
+
 - Tailwind CSS
 - GSAP
 - ScrollTrigger
@@ -20,10 +21,4 @@ A scroll-driven hero section created as part of the frontend assignment.
 - Statistics cards
 - Smooth visual transitions
 
-## Installation
 
-Clone the repository:
-
-```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-```
